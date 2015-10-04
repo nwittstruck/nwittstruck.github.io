@@ -9,7 +9,7 @@ main {
 
 /*** wrapper div for both header and main ***/
 .wrapper {
-  margin-top: 10%; }
+  margin-top: 5%; }
 
 /*** anchor tags ***/
 a:link,
@@ -93,7 +93,7 @@ footer {
   /* wrapper stays 480px wide past 480px wide and is kept centered */
   .wrapper {
     width: 480px;
-    margin: 10% auto 0 auto; } }
+    margin: 5% auto 0 auto; } }
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
   /* past 768px the layout is changed and the wrapper has a fixed width of 680px
@@ -105,7 +105,7 @@ footer {
   aligned right */
   header {
     float: left;
-    width: 46%;
+    width: 36%;
     text-align: right; }
 
   .author-container h1,
@@ -114,6 +114,12 @@ footer {
     text-align: right; }
 
   main {
-    width: 46%;
+    width: 56%;
     margin-left: 54%;
     padding: 0; } }
+/* All other devices (768px and up) */
+@media (min-width: 1024px) {
+  /* past 1024px the layout is changed and the wrapper has a fixed width of 880px
+  to accomodate both the header column and the content column */
+  .wrapper {
+    width: 880px; } }
